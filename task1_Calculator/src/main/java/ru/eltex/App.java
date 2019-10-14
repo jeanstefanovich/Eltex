@@ -1,8 +1,8 @@
-package EltexJavaAutumn2019.task1_Calculator;
+package ru.eltex;
 
 import java.io.*;
 
-public class Calculator {
+public class App {
     public static void main(String[] args) throws IOException {
         InputStream inputStream = System.in;
         Reader inputStreamReader = new InputStreamReader(inputStream);
@@ -14,7 +14,7 @@ public class Calculator {
 
         Integer X = Integer.parseInt(input);
 
-        System.out.println("Введите операцию(+, -, *, /: ");
+        System.out.println("Введите операцию(+, -, *, /): ");
         String operator = bufferedReader.readLine();
 
         System.out.println("Введите число: ");
@@ -28,7 +28,7 @@ public class Calculator {
                 System.out.println(X + Y);
                 break;
             case "-":
-                System.out.println(X + Y);
+                System.out.println(X - Y);
                 break;
             case "/":
                 if (Y == 0)
